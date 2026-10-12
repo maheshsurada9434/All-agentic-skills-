@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>All Agentic Skills · every AI agent skill in one place</title>
+<meta name="description" content="Search and install AI agent skills (SKILL.md) from Anthropic, Superpowers, UI/UX Pro Max, wshobson/agents and more. Licence-checked and synced weekly. By Mahesh Surada.">
+<meta name="theme-color" content="#09090b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2309090b'/%3E%3Cpath d='M16 5l9 11-9 11-9-11z' fill='%23ff7a45'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* All Agentic Skills: OLED dark catalog (UI/UX Pro Max: developer tool, JetBrains Mono + IBM Plex Sans), warm coral accent */
+:root{
+  --bg:#09090b;--bg2:#0f0f13;--card:#121217;--card2:#17171d;--line:#24242c;--line2:#2f2f39;
+  --ink:#f4f4f6;--muted:#a1a1ad;--faint:#7a7a87;
+  --acc:#ff7a45;--acc2:#ffb35c;--acc-ink:#1a0b03;--acc-soft:rgba(255,122,69,.12);
+  --ok:#4ade80;--warn:#fbbf24;
+  --mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,monospace;--sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --ease:cubic-bezier(.2,.8,.2,1);--spring:cubic-bezier(.34,1.56,.64,1);
+  --sat:env(safe-area-inset-top,0px);--sab:env(safe-area-inset-bottom,0px);color-scheme:dark;
+}
+*{box-sizing:border-box}[hidden]{display:none!important}
+html{background:var(--bg)}
+body{margin:0;color:var(--ink);font:15px/1.55 var(--sans);-webkit-font-smoothing:antialiased;min-height:100vh;
+  background:radial-gradient(60% 40% at 50% -5%,rgba(255,122,69,.14),transparent 70%),radial-gradient(40% 30% at 100% 20%,rgba(255,179,92,.06),transparent 70%),var(--bg)}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer;-webkit-tap-highlight-color:transparent;transition:transform .15s var(--ease),background-color .2s,border-color .2s,color .2s,box-shadow .2s}
+button:active{transform:scale(.96)}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+a{color:var(--acc2)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 18px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* header */
+.top{display:flex;align-items:center;justify-content:space-between;padding:calc(14px + var(--sat)) 0 0}
+.logo{display:flex;align-items:center;gap:10px;font:700 15px var(--mono);letter-spacing:-.01em;color:var(--ink);text-decoration:none}
+.logo svg{width:26px;height:26px;animation:spinIn 1.2s var(--spring) both}
+@keyframes spinIn{from{transform:rotate(-180deg) scale(.4);opacity:0}}
+.gh{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 14px;border:1px solid var(--line2);border-radius:10px;color:var(--ink);text-decoration:none;font:600 13px var(--mono)}
+.gh:hover{border-color:var(--acc)}
+.gh svg{width:18px;height:18px;fill:currentColor}
+
+/* hero */
+.hero{padding:44px 0 26px;text-align:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font:600 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--acc2);border:1px solid rgba(255,122,69,.35);background:var(--acc-soft);padding:6px 12px;border-radius:999px}
+.eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 0 rgba(255,122,69,.6);animation:ping 1.8s ease-out infinite}
+@keyframes ping{80%,100%{box-shadow:0 0 0 8px transparent}}
+h1{font:800 clamp(34px,7.4vw,68px)/1.02 var(--mono);letter-spacing:-.045em;margin:18px auto 14px;max-width:14ch}
+h1 .hl{background:linear-gradient(90deg,var(--acc),var(--acc2),var(--acc));background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 6s linear infinite}
+@keyframes shine{to{background-position:-200% 0}}
+.lead{color:var(--muted);font-size:clamp(15px,2.2vw,18px);max-width:58ch;margin:0 auto 26px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:720px;margin:0 auto 26px}
+.stat{border:1px solid var(--line);background:var(--card);border-radius:14px;padding:14px 8px}
+.stat b{display:block;font:800 clamp(22px,4.5vw,32px)/1 var(--mono);letter-spacing:-.03em}
+.stat span{font-size:12.5px;color:var(--muted)}
+@media(max-width:560px){.stats{grid-template-columns:repeat(2,1fr)}}
+.cmd{display:flex;align-items:center;gap:10px;max-width:720px;margin:0 auto;border:1px solid var(--line2);background:#050507;border-radius:12px;padding:6px 6px 6px 14px;text-align:left}
+.cmd code{flex:1;min-width:0;overflow-x:auto;white-space:nowrap;font:500 13px var(--mono);color:var(--muted);scrollbar-width:none}
+.cmd code b{color:var(--acc2);font-weight:600}
+.copy{flex:none;height:38px;padding:0 14px;border:0;border-radius:8px;background:var(--acc);color:var(--acc-ink);font:700 12.5px var(--mono);display:inline-flex;align-items:center;gap:6px;min-width:84px;justify-content:center}
+.copy:hover{background:var(--acc2)}
+.copy.done{background:var(--ok)}
+
+/* controls */
+.controls{position:sticky;top:0;z-index:20;padding:12px 0;margin-top:14px;background:linear-gradient(var(--bg) 70%,transparent)}
+.search{display:flex;align-items:center;gap:10px;border:1px solid var(--line2);background:var(--card);border-radius:14px;padding:0 8px 0 14px;transition:border-color .2s,box-shadow .2s}
+.search:focus-within{border-color:var(--acc);box-shadow:0 0 0 4px rgba(255,122,69,.14)}
+.search svg{width:19px;height:19px;stroke:var(--muted);fill:none;stroke-width:2;flex:none}
+.search input{flex:1;min-width:0;height:52px;border:0;background:none;outline:0;font-size:16px}
+.search kbd{font:600 12px var(--mono);color:var(--faint);border:1px solid var(--line2);border-radius:6px;padding:2px 7px}
+.search .count{font:600 12.5px var(--mono);color:var(--muted);white-space:nowrap}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;display:inline-flex;align-items:center;gap:7px;height:38px;padding:0 13px;border:1px solid var(--line2);border-radius:999px;background:var(--card);font:600 13px var(--sans);color:var(--muted)}
+.chip i{width:8px;height:8px;border-radius:50%;background:var(--c,var(--muted))}
+.chip small{font:600 11.5px var(--mono);color:var(--faint)}
+.chip:hover{color:var(--ink);border-color:var(--c,var(--acc))}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip[aria-pressed="true"] small{color:#52525b}
+.row2{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:8px}
+.row2 select{height:38px;border:1px solid var(--line2);background:var(--card);border-radius:10px;padding:0 30px 0 12px;font-size:13.5px;-webkit-appearance:none;appearance:none;
+  background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);background-position:calc(100% - 16px) 52%,calc(100% - 11px) 52%;background-size:5px 5px;background-repeat:no-repeat}
+.toggle{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;color:var(--muted);cursor:pointer;min-height:38px}
+.toggle input{width:18px;height:18px;accent-color:var(--acc)}
+
+/* grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin:10px 0 20px}
+.card{position:relative;text-align:left;border:1px solid var(--line);background:var(--card);border-radius:16px;padding:16px 16px 14px;display:flex;flex-direction:column;gap:8px;min-height:178px;overflow:hidden;isolation:isolate;
+  animation:cardIn .5s var(--ease) both;animation-delay:calc(var(--i,0) * 22ms)}
+@keyframes cardIn{from{opacity:0;transform:translateY(14px) scale(.98)}}
+.card::before{content:"";position:absolute;inset:0;z-index:-1;opacity:0;transition:opacity .25s;background:radial-gradient(260px circle at var(--mx,50%) var(--my,50%),rgba(255,122,69,.13),transparent 60%)}
+.card::after{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--c,var(--acc));opacity:.85}
+.card:hover{border-color:var(--line2);transform:translateY(-3px);box-shadow:0 18px 40px -22px rgba(0,0,0,.9)}
+.card:hover::before{opacity:1}
+.card{transition:transform .25s var(--ease),border-color .2s,box-shadow .25s}
+.card .nm{font:700 15px var(--mono);letter-spacing:-.01em;word-break:break-word;color:var(--ink)}
+.card .ds{color:var(--muted);font-size:13.5px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;max-height:calc(1.55em * 3)}
+.card > .meta:last-child{margin-top:auto}
+.meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font:600 11.5px var(--mono);color:var(--faint)}
+.tag{display:inline-flex;align-items:center;gap:5px;padding:2px 8px;border-radius:6px;background:rgba(255,255,255,.04);border:1px solid var(--line2);color:var(--muted)}
+.tag.cat{color:var(--c);border-color:color-mix(in srgb,var(--c) 40%,transparent);background:color-mix(in srgb,var(--c) 10%,transparent)}
+.tag.ext{color:var(--warn);border-color:rgba(251,191,36,.35)}
+.tag.own{color:var(--acc-ink);background:linear-gradient(90deg,var(--acc),var(--acc2));border-color:transparent}
+.empty{text-align:center;color:var(--muted);padding:40px 10px;font-family:var(--mono)}
+.more{display:block;margin:0 auto 30px;height:46px;padding:0 22px;border:1px solid var(--line2);border-radius:12px;background:var(--card);font:700 13px var(--mono)}
+.more:hover{border-color:var(--acc)}
+
+/* collections */
+.cols{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px;margin:8px 0 36px}
+.col{border:1px solid var(--line);background:var(--bg2);border-radius:14px;padding:14px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:4px}
+.col:hover{border-color:var(--acc)}
+.col b{font:700 14px var(--mono)}
+.col span{font-size:13px;color:var(--muted)}
+h2.sec{font:800 22px var(--mono);letter-spacing:-.03em;margin:34px 0 6px}
+p.sub{color:var(--muted);margin:0 0 12px}
+
+/* drawer */
+.scrim{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.6);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);opacity:0;transition:opacity .25s}
+.scrim.show{opacity:1}
+.drawer{position:fixed;z-index:51;right:0;top:0;bottom:0;width:min(520px,100%);background:var(--bg2);border-left:1px solid var(--line2);overflow-y:auto;padding:calc(18px + var(--sat)) 20px calc(24px + var(--sab));
+  transform:translateX(100%);transition:transform .45s var(--ease);box-shadow:-30px 0 60px -30px rgba(0,0,0,.9)}
+.drawer.show{transform:none}
+@media(max-width:640px){.drawer{top:auto;left:0;width:100%;max-height:88vh;border-left:0;border-top:1px solid var(--line2);border-radius:22px 22px 0 0;transform:translateY(100%)}}
+.drawer .x{float:right;width:44px;height:44px;border-radius:12px;border:1px solid var(--line2);background:var(--card);font-size:18px}
+.drawer h3{font:800 24px var(--mono);letter-spacing:-.03em;margin:6px 0 8px;word-break:break-word}
+.drawer .full{color:var(--muted);font-size:15px;margin:12px 0 18px}
+.drawer dl{display:grid;grid-template-columns:auto 1fr;gap:8px 14px;font-size:13.5px;margin:0 0 18px}
+.drawer dt{color:var(--faint);font-family:var(--mono)}
+.drawer dd{margin:0;word-break:break-word}
+.drawer .lbl{font:700 12px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--faint);margin:16px 0 6px}
+.drawer .cmd{margin:0 0 8px}
+.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.btn{display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 16px;border-radius:10px;border:1px solid var(--line2);background:var(--card);color:var(--ink);text-decoration:none;font:700 13px var(--mono)}
+.btn:hover{border-color:var(--acc)}
+.btn.pri{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
+.note{font-size:13px;color:var(--warn);background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.25);border-radius:10px;padding:10px 12px;margin-top:12px}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px;padding:22px 0 calc(28px + var(--sab));text-align:center}
+footer b{color:var(--ink)}
+.toast{position:fixed;left:50%;bottom:calc(20px + var(--sab));transform:translate(-50%,20px);opacity:0;visibility:hidden;background:var(--ink);color:var(--bg);font:700 13px var(--mono);padding:10px 16px;border-radius:10px;z-index:60;transition:transform .35s var(--spring),opacity .2s,visibility .2s}
+.toast.show{transform:translate(-50%,0);opacity:1;visibility:visible}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="logo" href="./"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3l11 13-11 13L5 16z" fill="#ff7a45"/><path d="M16 9l6 7-6 7-6-7z" fill="#09090b"/></svg>All Agentic Skills</a>
+    <a class="gh" href="https://github.com/maheshsurada9434/All-agentic-skills-" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.6 0 0 3.6 0 8c0 3.5 2.3 6.5 5.5 7.6.4.1.5-.2.5-.4v-1.4c-2.2.5-2.7-1-2.7-1-.4-.9-.9-1.2-.9-1.2-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.3 1.9.9 2.4.7.1-.5.3-.9.5-1.1-1.8-.2-3.6-.9-3.6-4 0-.9.3-1.6.8-2.1-.1-.2-.4-1 .1-2.1 0 0 .7-.2 2.2.8.6-.2 1.3-.3 2-.3s1.4.1 2 .3c1.5-1 2.2-.8 2.2-.8.4 1.1.2 1.9.1 2.1.5.6.8 1.3.8 2.1 0 3.1-1.9 3.7-3.6 3.9.3.3.5.8.5 1.5v2.2c0 .2.1.5.6.4C13.7 14.5 16 11.5 16 8c0-4.4-3.6-8-8-8z"/></svg>GitHub</a>
+  </header>
+
+  <section class="hero">
+    <span class="eyebrow"><i></i>Synced weekly</span>
+    <h1>Every AI agent skill. <span class="hl">One place.</span></h1>
+    <p class="lead">Search skills from Anthropic, Superpowers, UI/UX Pro Max, wshobson/agents and more, plus original skills by Mahesh Surada. Every skill is licence-checked and installs with one line.</p>
+    <div class="stats">
+      <div class="stat"><b id="sTotal">0</b><span>skills</span></div>
+      <div class="stat"><b id="sCopied">0</b><span>ready to install</span></div>
+      <div class="stat"><b id="sCols">0</b><span>collections</span></div>
+      <div class="stat"><b id="sCats">0</b><span>categories</span></div>
+    </div>
+    <div class="cmd"><code id="heroCmd">curl -fsSL …/install.sh | bash -s -- <b>&lt;skill&gt;</b></code><button class="copy" data-copy="hero">Copy</button></div>
+  </section>
+
+  <div class="controls">
+    <label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <span class="sr">Search skills</span><input id="q" type="search" placeholder="Search skills, e.g. testing, design, pdf…" autocomplete="off" spellcheck="false">
+      <span class="count" id="count" aria-live="polite"></span><kbd>/</kbd></label>
+    <div class="chips" id="cats" role="group" aria-label="Category"></div>
+    <div class="row2">
+      <select id="src" aria-label="Collection"><option value="">All collections</option></select>
+      <label class="toggle"><input type="checkbox" id="onlyLocal"> Only skills copied here</label>
+    </div>
+  </div>
+
+  <main>
+    <div class="grid" id="grid" aria-live="polite"></div>
+    <button class="more" id="more" hidden>Show more</button>
+    <h2 class="sec">Collections</h2>
+    <p class="sub">Where the skills come from. Tap one to open it on GitHub.</p>
+    <div class="cols" id="cols"></div>
+  </main>
+</div>
+<footer><div class="wrap">Collected and maintained by <b>Mahesh Surada</b> · Skills belong to their authors and keep their licences · <span id="synced"></span></div></footer>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dTitle" hidden></aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+'use strict';
+const REPO = 'maheshsurada9434/All-agentic-skills-';
+const INSTALL = `curl -fsSL https://raw.githubusercontent.com/${REPO}/main/install.sh | bash -s --`;
+const CAT_COLORS = {'Design & UI':'#f472b6','Documents & Office':'#60a5fa','Coding workflow':'#ff7a45','Testing & QA':'#4ade80','DevOps & Cloud':'#38bdf8','Security':'#f87171','Data & AI':'#a78bfa','Languages & Frameworks':'#fbbf24','Mobile & Web apps':'#2dd4bf','Integrations & MCP':'#c084fc','Business & Writing':'#fb923c','Other':'#a1a1aa'};
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+let C = null, cat = '', page = 60;
+
+function toast(m) { const t = $('#toast'); t.textContent = m; t.classList.add('show'); clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove('show'), 1800); }
+function countUp(el, to) {
+  if (RM) { el.textContent = to; return; }
+  const t0 = performance.now(), d = 1100;
+  const f = n => { const k = Math.min(1, (n - t0) / d); el.textContent = Math.round(to * (1 - Math.pow(1 - k, 4))); if (k < 1) requestAnimationFrame(f); };
+  requestAnimationFrame(f);
+}
+async function copy(text, btn) {
+  try { await navigator.clipboard.writeText(text); } catch (e) { const ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); }
+  if (btn) { const o = btn.textContent; btn.classList.add('done'); btn.textContent = '✓ Copied'; setTimeout(() => { btn.classList.remove('done'); btn.textContent = o; }, 1500); }
+  else toast('Copied');
+}
+const cmdFor = (s, extra = '') => `${INSTALL} ${s.id}${extra}`;
+
+function filtered() {
+  const q = $('#q').value.trim().toLowerCase(), src = $('#src').value, local = $('#onlyLocal').checked;
+  const words = q.split(/\s+/).filter(Boolean);
+  return C.skills.filter(s => (!cat || s.category === cat) && (!src || s.source === src) && (!local || s.vendored) &&
+    words.every(w => (s.name + ' ' + s.description + ' ' + s.category + ' ' + s.source).toLowerCase().includes(w)));
+}
+function card(s, i) {
+  const c = CAT_COLORS[s.category] || '#a1a1aa';
+  return `<button class="card" style="--c:${c};--i:${Math.min(i, 30)}" data-id="${esc(s.id)}">
+    <div class="meta">${s.source === 'mahesh-surada' ? '<span class="tag own">Original</span>' : ''}<span class="tag cat">${esc(s.category)}</span>${s.vendored ? '' : '<span class="tag ext">link only</span>'}</div>
+    <div class="nm">${esc(s.name)}</div>
+    <div class="ds">${esc(s.description || 'No description.')}</div>
+    <div class="meta"><span>${esc(s.source)}</span><span>·</span><span>${esc(s.license)}</span></div>
+  </button>`;
+}
+function render(reset = true) {
+  if (reset) page = 60;
+  const list = filtered();
+  $('#count').textContent = `${list.length} of ${C.total}`;
+  $('#grid').innerHTML = list.length ? list.slice(0, page).map(card).join('') : '<div class="empty">No skills match. Try a shorter word.</div>';
+  $('#more').hidden = list.length <= page;
+  $('#more').textContent = `Show more (${list.length - page} left)`;
+}
+function renderCats() {
+  const counts = {}; C.skills.forEach(s => counts[s.category] = (counts[s.category] || 0) + 1);
+  const cats = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
+  $('#cats').innerHTML = `<button class="chip" data-cat="" aria-pressed="${!cat}">All <small>${C.total}</small></button>` +
+    cats.map(k => `<button class="chip" style="--c:${CAT_COLORS[k] || '#a1a1aa'}" data-cat="${esc(k)}" aria-pressed="${cat === k}"><i></i>${esc(k)} <small>${counts[k]}</small></button>`).join('');
+  return cats.length;
+}
+function openDrawer(s) {
+  const d = $('#drawer'), sc = $('#scrim');
+  const files = s.local ? `https://github.com/${REPO}/tree/main/${s.local}` : s.url;
+  d.innerHTML = `<button class="x" data-close aria-label="Close">✕</button>
+    <div class="meta" style="margin-top:6px">${s.source === 'mahesh-surada' ? '<span class="tag own">Original</span>' : ''}<span class="tag cat" style="--c:${CAT_COLORS[s.category]}">${esc(s.category)}</span></div>
+    <h3 id="dTitle">${esc(s.name)}</h3>
+    <div class="full">${esc(s.description || 'No description.')}</div>
+    <dl><dt>Collection</dt><dd><a href="https://github.com/${esc(s.repo)}" target="_blank" rel="noopener">${esc(s.repo)}</a></dd>
+      <dt>Licence</dt><dd>${esc(s.license)}</dd><dt>Size</dt><dd>${s.sizeKB} KB</dd>
+      <dt>Folder</dt><dd>${esc(s.local || s.path)}</dd></dl>
+    <div class="lbl">Install for you (all projects)</div>
+    <div class="cmd"><code>${esc(cmdFor(s))}</code><button class="copy" data-copycmd="${esc(cmdFor(s))}">Copy</button></div>
+    <div class="lbl">Install for this project only</div>
+    <div class="cmd"><code>${esc(cmdFor(s, ' --project'))}</code><button class="copy" data-copycmd="${esc(cmdFor(s, ' --project'))}">Copy</button></div>
+    ${s.vendored ? '' : `<div class="note">This skill's licence (${esc(s.license)}) doesn't allow copying it here, so the installer fetches it from the original repo. Check the authors' terms before using it.</div>`}
+    <div class="btns"><a class="btn pri" href="${esc(files)}" target="_blank" rel="noopener">View files ↗</a><a class="btn" href="${esc(s.url)}" target="_blank" rel="noopener">Original source ↗</a></div>`;
+  d.hidden = false; sc.hidden = false;
+  requestAnimationFrame(() => { d.classList.add('show'); sc.classList.add('show'); });
+  d.querySelector('.x').focus();
+  try { history.replaceState(null, '', '#' + encodeURIComponent(s.id)); } catch (e) {}
+}
+function closeDrawer() {
+  const d = $('#drawer'), sc = $('#scrim');
+  d.classList.remove('show'); sc.classList.remove('show');
+  setTimeout(() => { d.hidden = true; sc.hidden = true; }, RM ? 0 : 400);
+  try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {}
+}
+
+document.addEventListener('click', e => {
+  const b = e.target.closest('button, [data-close]'); if (!b) { if (e.target.id === 'scrim') closeDrawer(); return; }
+  if (b.dataset.cat !== undefined) { cat = b.dataset.cat; renderCats(); render(); return; }
+  if (b.dataset.id) { const s = C.skills.find(x => x.id === b.dataset.id); if (s) openDrawer(s); return; }
+  if (b.dataset.copy === 'hero') return copy(`${INSTALL} frontend-design systematic-debugging`, b);
+  if (b.dataset.copycmd) return copy(b.dataset.copycmd, b);
+  if (b.hasAttribute('data-close')) return closeDrawer();
+  if (b.id === 'more') { page += 60; render(false); }
+});
+$('#scrim').addEventListener('click', closeDrawer);
+let qt; $('#q').addEventListener('input', () => { clearTimeout(qt); qt = setTimeout(() => render(), 120); });
+$('#src').addEventListener('change', () => render());
+$('#onlyLocal').addEventListener('change', () => render());
+document.addEventListener('keydown', e => {
+  if (e.key === '/' && document.activeElement !== $('#q')) { e.preventDefault(); $('#q').focus(); }
+  if (e.key === 'Escape' && !$('#drawer').hidden) closeDrawer();
+});
+// Cursor spotlight on cards
+document.addEventListener('pointermove', e => {
+  const c = e.target.closest && e.target.closest('.card'); if (!c) return;
+  const r = c.getBoundingClientRect(); c.style.setProperty('--mx', (e.clientX - r.left) + 'px'); c.style.setProperty('--my', (e.clientY - r.top) + 'px');
+}, {passive: true});
+
+(async () => {
+  try { C = await (await fetch('catalog/skills.json', {cache: 'no-cache'})).json(); }
+  catch (e) { $('#grid').innerHTML = '<div class="empty">Could not load the catalog. Refresh to try again.</div>'; return; }
+  $('#heroCmd').innerHTML = `${esc(INSTALL)} <b>frontend-design systematic-debugging</b>`;
+  const ncat = renderCats();
+  countUp($('#sTotal'), C.total); countUp($('#sCopied'), C.copied); countUp($('#sCols'), C.sources.length); countUp($('#sCats'), ncat);
+  C.sources.forEach(s => $('#src').insertAdjacentHTML('beforeend', `<option value="${esc(s.id)}">${esc(s.name)} (${s.skills})</option>`));
+  $('#cols').innerHTML = C.sources.map(s => `<a class="col" href="${esc(s.url)}" target="_blank" rel="noopener"><b>${esc(s.name)}</b><span>${s.skills} skills · ${s.copied} copied here · ${esc(s.license)}</span></a>`).join('');
+  $('#synced').textContent = 'Last synced ' + new Date(C.generated).toLocaleDateString('en-IN', {day: 'numeric', month: 'short', year: 'numeric'});
+  render();
+  const fromHash = () => { const h = decodeURIComponent(location.hash.slice(1)); const s = h && C.skills.find(x => x.id === h); if (s) openDrawer(s); };
+  fromHash(); window.addEventListener('hashchange', fromHash);
+})();
+</script>
+</body>
+</html>
