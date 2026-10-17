@@ -37,7 +37,7 @@ By default skills go to `~/.claude/skills`. Use `--project` for `./.claude/skill
 ## 📚 Catalog
 
 <!-- CATALOG:START -->
-**261 skills** from 8 collections, 228 of them copied here and ready to install. Last synced 2026-10-12.
+**266 skills** from 9 collections, 233 of them copied here and ready to install. Last synced 2026-10-17.
 
 | Collection | Skills | In this repo | Licence |
 |---|---:|---:|---|
@@ -45,10 +45,11 @@ By default skills go to `~/.claude/skills`. Use `--project` for `./.claude/skill
 | [Anthropic (official)](https://github.com/anthropics/skills) | 19 | 14 | per skill |
 | [Superpowers by Jesse Vincent](https://github.com/obra/superpowers) | 15 | 15 | MIT |
 | [UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | 7 | 7 | MIT |
-| [wshobson/agents plugin skills](https://github.com/wshobson/agents) | 184 | 184 | MIT |
+| [wshobson/agents plugin skills](https://github.com/wshobson/agents) | 185 | 185 | MIT |
 | [Claude Office Skills](https://github.com/tfriedel/claude-office-skills) | 4 | 0 | per skill |
 | [Karpathy coding guidelines](https://github.com/forrestchang/andrej-karpathy-skills) | 1 | 0 | per skill |
 | [Composio awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | 27 | 4 | per skill |
+| [REA: Reverse Engineer Anything](https://github.com/morluto/rea) | 4 | 4 | MIT |
 
 <details><summary><b>Business & Writing</b> (10)</summary>
 
@@ -67,7 +68,7 @@ By default skills go to `~/.claude/skills`. Use `--project` for `./.claude/skill
 
 </details>
 
-<details><summary><b>Coding workflow</b> (43)</summary>
+<details><summary><b>Coding workflow</b> (44)</summary>
 
 | Skill | What it does | Source |
 |---|---|---|
@@ -100,6 +101,7 @@ By default skills go to `~/.claude/skills`. Use `--project` for `./.claude/skill
 | [`python-anti-patterns`](skills/wshobson/python-anti-patterns) | Use this skill when reviewing Python code for common anti-patterns to avoid. Use as a checklist when reviewing code, before finalizing imple… | wshobson |
 | [`python-observability`](skills/wshobson/python-observability) | Python observability patterns including structured logging, metrics, and distributed tracing. Use when adding logging, implementing metrics … | wshobson |
 | [`python-performance-optimization`](skills/wshobson/python-performance-optimization) | Profile and optimize Python code using cProfile, memory profilers, and performance best practices. Use when debugging slow Python code, opti… | wshobson |
+| [`rea-changelog-update`](skills/rea/rea-changelog-update) | Prepare or rewrite REA release changelogs and GitHub release notes from pinned Git history, with verified contributor thanks and Release Ple… | rea |
 | [`receiving-code-review`](skills/superpowers/receiving-code-review) | Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable -… | superpowers |
 | [`requesting-code-review`](skills/superpowers/requesting-code-review) | Use when completing tasks, implementing major features, or before merging to verify work meets requirements | superpowers |
 | [`review-agent-setup`](skills/wshobson/review-agent-setup) | Configure human-in-the-loop gating for AI agent review actions in Claude Code. Use when setting up a project where an agent may post PR revi… | wshobson |
@@ -141,7 +143,7 @@ By default skills go to `~/.claude/skills`. Use `--project` for `./.claude/skill
 
 </details>
 
-<details><summary><b>Design & UI</b> (40)</summary>
+<details><summary><b>Design & UI</b> (41)</summary>
 
 | Skill | What it does | Source |
 |---|---|---|
@@ -170,6 +172,7 @@ By default skills go to `~/.claude/skills`. Use `--project` for `./.claude/skill
 | [`prompt-engineering-patterns`](skills/wshobson/prompt-engineering-patterns) | This skill should be used when the user asks to "optimize a prompt", "improve prompt performance", "design a prompt template", "write better… | wshobson |
 | [`python-design-patterns`](skills/wshobson/python-design-patterns) | Python design patterns including KISS, Separation of Concerns, Single Responsibility, and composition over inheritance. Use this skill when … | wshobson |
 | [`python-project-structure`](skills/wshobson/python-project-structure) | Python project organization, module architecture, and public API design. Use when setting up new projects, organizing modules, defining publ… | wshobson |
+| [`rea-tool-design`](skills/rea/rea-tool-design) | Design or change REA investigation tools, CLI/MCP contracts, provider capabilities, and Evidence semantics. | rea |
 | [`recsys-pipeline-architect`](skills/wshobson/recsys-pipeline-architect) | Design composable recommendation, ranking, and feed pipelines using the six-stage Source→Hydrator→Filter→Scorer→Selector→SideEffect framewor… | wshobson |
 | [`slack-gif-creator`](skills/anthropic/slack-gif-creator) | Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use … | anthropic |
 | [`slack-gif-creator`](skills/composio/slack-gif-creator) | Toolkit for creating animated GIFs optimized for Slack, with validators for size constraints and composable animation primitives. This skill… | composio |
@@ -268,7 +271,7 @@ By default skills go to `~/.claude/skills`. Use `--project` for `./.claude/skill
 
 </details>
 
-<details><summary><b>Languages & Frameworks</b> (14)</summary>
+<details><summary><b>Languages & Frameworks</b> (16)</summary>
 
 | Skill | What it does | Source |
 |---|---|---|
@@ -284,6 +287,8 @@ By default skills go to `~/.claude/skills`. Use `--project` for `./.claude/skill
 | [`python-type-safety`](skills/wshobson/python-type-safety) | Python type safety with type hints, generics, protocols, and strict type checking. Use when adding type annotations, implementing generic cl… | wshobson |
 | [`react-modernization`](skills/wshobson/react-modernization) | Upgrade React applications to latest versions, migrate from class components to hooks, and adopt concurrent features. Use when modernizing R… | wshobson |
 | [`react-state-management`](skills/wshobson/react-state-management) | Master modern React state management with Redux Toolkit, Zustand, Jotai, and React Query. Use when setting up global state, managing server … | wshobson |
+| [`reverse-engineer-anything`](skills/rea/reverse-engineer-anything) | Reverse engineer native, managed, Electron/JavaScript, packaged, firmware, and browser targets with REA. Use shipped-artifact or requested r… | rea |
+| [`social-evidence-research`](skills/wshobson/social-evidence-research) | Research public discussion on social platforms and keep every report claim tied to the source material that supports it. Use when researchin… | wshobson |
 | [`typescript-advanced-types`](skills/wshobson/typescript-advanced-types) | Master TypeScript's advanced type system including generics, conditional types, mapped types, template literals, and utility types for build… | wshobson |
 | [`uv-package-manager`](skills/wshobson/uv-package-manager) | Master the uv package manager for fast Python dependency management, virtual environments, and modern Python project workflows. Use when set… | wshobson |
 
@@ -367,7 +372,7 @@ By default skills go to `~/.claude/skills`. Use `--project` for `./.claude/skill
 
 </details>
 
-<details><summary><b>Testing & QA</b> (21)</summary>
+<details><summary><b>Testing & QA</b> (22)</summary>
 
 | Skill | What it does | Source |
 |---|---|---|
@@ -385,6 +390,7 @@ By default skills go to `~/.claude/skills`. Use `--project` for `./.claude/skill
 | [`llm-evaluation`](skills/wshobson/llm-evaluation) | Implement comprehensive evaluation strategies for LLM applications using automated metrics, human feedback, and benchmarking. Use when testi… | wshobson |
 | [`python-testing-patterns`](skills/wshobson/python-testing-patterns) | Implement comprehensive testing strategies with pytest, fixtures, mocking, and test-driven development. Use when writing Python tests, setti… | wshobson |
 | [`quantized-export`](skills/wshobson/quantized-export) | Export a promoted fine-tuned model in the right deployment format — merged safetensors, LoRA-only, GGUF with imatrix, or FP8. Use after a ch… | wshobson |
+| [`rea-ci-tests-audit`](skills/rea/rea-ci-tests-audit) | Audit REA CI and test suites for correctness, fixture drift, false passes, and measured performance; use for suite or workflow investigation… | rea |
 | [`screen-reader-testing`](skills/wshobson/screen-reader-testing) | Test web applications with screen readers including VoiceOver, NVDA, and JAWS. Use when validating screen reader compatibility, debugging ac… | wshobson |
 | [`skill-creator`](skills/anthropic/skill-creator) | Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, ed… | anthropic |
 | [`systematic-debugging`](skills/superpowers/systematic-debugging) | Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes | superpowers |

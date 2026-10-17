@@ -1,12 +1,63 @@
 {
   "_comment": "Upstream skill collections. The weekly sync pulls every SKILL.md from these repos. Skills under MIT, Apache-2.0, BSD or ISC are copied into skills/<id>/ with their licence; anything else is listed with a link to the original only.",
   "sources": [
-    { "id": "anthropic", "name": "Anthropic (official)", "repo": "anthropics/skills", "exclude": ["template/", "spec/"] },
-    { "id": "superpowers", "name": "Superpowers by Jesse Vincent", "repo": "obra/superpowers" },
-    { "id": "ui-ux-pro-max", "name": "UI/UX Pro Max", "repo": "nextlevelbuilder/ui-ux-pro-max-skill", "exclude": ["cli/assets/"] },
-    { "id": "wshobson", "name": "wshobson/agents plugin skills", "repo": "wshobson/agents" },
-    { "id": "office-skills", "name": "Claude Office Skills", "repo": "tfriedel/claude-office-skills" },
-    { "id": "karpathy", "name": "Karpathy coding guidelines", "repo": "forrestchang/andrej-karpathy-skills" },
-    { "id": "composio", "name": "Composio awesome-claude-skills", "repo": "ComposioHQ/awesome-claude-skills", "exclude": ["composio-skills/"] }
+    {
+      "id": "anthropic",
+      "name": "Anthropic (official)",
+      "repo": "anthropics/skills",
+      "exclude": [
+        "template/",
+        "spec/"
+      ]
+    },
+    {
+      "id": "superpowers",
+      "name": "Superpowers by Jesse Vincent",
+      "repo": "obra/superpowers"
+    },
+    {
+      "id": "ui-ux-pro-max",
+      "name": "UI/UX Pro Max",
+      "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "exclude": [
+        "cli/assets/"
+      ]
+    },
+    {
+      "id": "wshobson",
+      "name": "wshobson/agents plugin skills",
+      "repo": "wshobson/agents"
+    },
+    {
+      "id": "office-skills",
+      "name": "Claude Office Skills",
+      "repo": "tfriedel/claude-office-skills"
+    },
+    {
+      "id": "karpathy",
+      "name": "Karpathy coding guidelines",
+      "repo": "forrestchang/andrej-karpathy-skills"
+    },
+    {
+      "id": "composio",
+      "name": "Composio awesome-claude-skills",
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "exclude": [
+        "composio-skills/"
+      ]
+    },
+    {
+      "id": "rea",
+      "name": "REA: Reverse Engineer Anything",
+      "repo": "morluto/rea",
+      "exclude": [
+        "third_party/",
+        "website/",
+        "node_modules/",
+        "tests/",
+        "experiments/",
+        "docs/"
+      ]
+    }
   ]
 }
