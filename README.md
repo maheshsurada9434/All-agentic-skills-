@@ -37,7 +37,7 @@ By default skills go to `~/.claude/skills`. Use `--project` for `./.claude/skill
 ## 📚 Catalog
 
 <!-- CATALOG:START -->
-**266 skills** from 9 collections, 233 of them copied here and ready to install. Last synced 2026-10-17.
+**267 skills** from 9 collections, 234 of them copied here and ready to install. Last synced 2026-10-19.
 
 | Collection | Skills | In this repo | Licence |
 |---|---:|---:|---|
@@ -49,7 +49,7 @@ By default skills go to `~/.claude/skills`. Use `--project` for `./.claude/skill
 | [Claude Office Skills](https://github.com/tfriedel/claude-office-skills) | 4 | 0 | per skill |
 | [Karpathy coding guidelines](https://github.com/forrestchang/andrej-karpathy-skills) | 1 | 0 | per skill |
 | [Composio awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | 27 | 4 | per skill |
-| [REA: Reverse Engineer Anything](https://github.com/morluto/rea) | 4 | 4 | MIT |
+| [REA: Reverse Engineer Anything](https://github.com/morluto/rea) | 5 | 5 | MIT |
 
 <details><summary><b>Business & Writing</b> (10)</summary>
 
@@ -143,7 +143,7 @@ By default skills go to `~/.claude/skills`. Use `--project` for `./.claude/skill
 
 </details>
 
-<details><summary><b>Design & UI</b> (41)</summary>
+<details><summary><b>Design & UI</b> (42)</summary>
 
 | Skill | What it does | Source |
 |---|---|---|
@@ -172,6 +172,7 @@ By default skills go to `~/.claude/skills`. Use `--project` for `./.claude/skill
 | [`prompt-engineering-patterns`](skills/wshobson/prompt-engineering-patterns) | This skill should be used when the user asks to "optimize a prompt", "improve prompt performance", "design a prompt template", "write better… | wshobson |
 | [`python-design-patterns`](skills/wshobson/python-design-patterns) | Python design patterns including KISS, Separation of Concerns, Single Responsibility, and composition over inheritance. Use this skill when … | wshobson |
 | [`python-project-structure`](skills/wshobson/python-project-structure) | Python project organization, module architecture, and public API design. Use when setting up new projects, organizing modules, defining publ… | wshobson |
+| [`rea-analysis-optimization`](skills/rea/rea-analysis-optimization) | Optimize REA providers and shared analysis workflows for agent context, latency, CPU, and memory while preserving correctness and Evidence. … | rea |
 | [`rea-tool-design`](skills/rea/rea-tool-design) | Design or change REA investigation tools, CLI/MCP contracts, provider capabilities, and Evidence semantics. | rea |
 | [`recsys-pipeline-architect`](skills/wshobson/recsys-pipeline-architect) | Design composable recommendation, ranking, and feed pipelines using the six-stage Source→Hydrator→Filter→Scorer→Selector→SideEffect framewor… | wshobson |
 | [`slack-gif-creator`](skills/anthropic/slack-gif-creator) | Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use … | anthropic |

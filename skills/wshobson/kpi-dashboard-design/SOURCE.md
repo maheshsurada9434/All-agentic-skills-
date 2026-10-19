@@ -1,4 +1,4 @@
 # Source
 
-This skill is a copy of [wshobson/agents/plugins/business-analytics/skills/kpi-dashboard-design](https://github.com/wshobson/agents/tree/044b4b21f083/plugins/business-analytics/skills/kpi-dashboard-design) (MIT).
+This skill is a copy of [wshobson/agents/plugins/business-analytics/skills/kpi-dashboard-design](https://github.com/wshobson/agents/tree/0874a27b17a2/plugins/business-analytics/skills/kpi-dashboard-design) (MIT).
 Copied by the All Agentic Skills weekly sync. All credit goes to the original authors.
