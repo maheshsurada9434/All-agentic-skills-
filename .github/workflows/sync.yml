@@ -27,7 +27,7 @@ jobs:
         run: |
           git config user.name "Mahesh Surada"
           git config user.email "36591838+maheshsurada9434@users.noreply.github.com"
-          git add -A skills catalog README.md
+          git add -A skills catalog README.md CATALOG.md
           git diff --cached --quiet || (git commit -m "Weekly skills sync $(date -u +%F)" && git pull --rebase && git push)
       - name: Build the website
         run: mkdir _site && cp -r index.html catalog install.sh _site/

@@ -190,13 +190,16 @@ if (fs.existsSync(readme)) {
   const esc = s => s.replace(/\|/g, '\\|');
   let md = `**${catalog.total} skills** from ${catalog.sources.length} collections, ${catalog.copied} of them copied here and ready to install. Last synced ${catalog.generated.slice(0, 10)}.\n\n`;
   md += `| Collection | Skills | In this repo | Licence |\n|---|---:|---:|---|\n` + catalog.sources.map(s => `| [${s.name}](${s.url}) | ${s.skills} | ${s.copied} | ${s.license} |`).join('\n') + '\n\n';
+  const head = md + `**[Full skill list by category →](CATALOG.md)**\n\n`;
+  md = `# Full catalog\n\n`;
   for (const c of Object.keys(cats).sort()) {
     md += `<details><summary><b>${c}</b> (${cats[c].length})</summary>\n\n| Skill | What it does | Source |\n|---|---|---|\n`;
     md += cats[c].map(s => `| [\`${s.name}\`](${s.local || s.url}) | ${esc(s.description.slice(0, 140))}${s.description.length > 140 ? '…' : ''} | ${s.source}${s.vendored ? '' : ' ↗'} |`).join('\n');
     md += '\n\n</details>\n\n';
   }
   const txt = fs.readFileSync(readme, 'utf8');
-  const out = txt.replace(/<!-- CATALOG:START -->[\s\S]*<!-- CATALOG:END -->/, `<!-- CATALOG:START -->\n${md}<!-- CATALOG:END -->`);
+  const out = txt.replace(/<!-- CATALOG:START -->[\s\S]*<!-- CATALOG:END -->/, `<!-- CATALOG:START -->\n${head}<!-- CATALOG:END -->`);
   fs.writeFileSync(readme, out);
+  fs.writeFileSync(path.join(ROOT, 'CATALOG.md'), md);
 }
 console.log(`\nCatalog: ${catalog.total} skills, ${catalog.copied} copied.`);

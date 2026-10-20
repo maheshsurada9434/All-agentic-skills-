@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T04:00:47.943Z",
+ "generated": "2026-10-20T07:40:52.596Z",
  "sources": [
   {
    "id": "mahesh-surada",
@@ -94,7 +94,7 @@
    "repo": "morluto/rea",
    "url": "https://github.com/morluto/rea",
    "license": "MIT",
-   "commit": "3fca2e0ca6e5",
+   "commit": "4eaf3a117b3f",
    "skills": 5,
    "copied": 5,
    "linked": 0
@@ -740,7 +740,7 @@
    "source": "rea",
    "repo": "morluto/rea",
    "path": ".agents/skills/rea-changelog-update",
-   "url": "https://github.com/morluto/rea/tree/3fca2e0ca6e5/.agents/skills/rea-changelog-update",
+   "url": "https://github.com/morluto/rea/tree/4eaf3a117b3f/.agents/skills/rea-changelog-update",
    "license": "MIT",
    "vendored": true,
    "category": "Coding workflow",
@@ -1538,7 +1538,7 @@
    "source": "rea",
    "repo": "morluto/rea",
    "path": ".agents/skills/rea-analysis-optimization",
-   "url": "https://github.com/morluto/rea/tree/3fca2e0ca6e5/.agents/skills/rea-analysis-optimization",
+   "url": "https://github.com/morluto/rea/tree/4eaf3a117b3f/.agents/skills/rea-analysis-optimization",
    "license": "MIT",
    "vendored": true,
    "category": "Design & UI",
@@ -1552,7 +1552,7 @@
    "source": "rea",
    "repo": "morluto/rea",
    "path": ".agents/skills/rea-tool-design",
-   "url": "https://github.com/morluto/rea/tree/3fca2e0ca6e5/.agents/skills/rea-tool-design",
+   "url": "https://github.com/morluto/rea/tree/4eaf3a117b3f/.agents/skills/rea-tool-design",
    "license": "MIT",
    "vendored": true,
    "category": "Design & UI",
@@ -2727,11 +2727,11 @@
    "source": "rea",
    "repo": "morluto/rea",
    "path": ".agents/skills/reverse-engineer-anything",
-   "url": "https://github.com/morluto/rea/tree/3fca2e0ca6e5/.agents/skills/reverse-engineer-anything",
+   "url": "https://github.com/morluto/rea/tree/4eaf3a117b3f/.agents/skills/reverse-engineer-anything",
    "license": "MIT",
    "vendored": true,
    "category": "Languages & Frameworks",
-   "sizeKB": 77,
+   "sizeKB": 80,
    "local": "skills/rea/reverse-engineer-anything"
   },
   {
@@ -3796,7 +3796,7 @@
    "source": "rea",
    "repo": "morluto/rea",
    "path": ".agents/skills/rea-ci-tests-audit",
-   "url": "https://github.com/morluto/rea/tree/3fca2e0ca6e5/.agents/skills/rea-ci-tests-audit",
+   "url": "https://github.com/morluto/rea/tree/4eaf3a117b3f/.agents/skills/rea-ci-tests-audit",
    "license": "MIT",
    "vendored": true,
    "category": "Testing & QA",
