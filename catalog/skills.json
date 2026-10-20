@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T09:06:03.015Z",
+ "generated": "2026-10-20T04:00:27.678Z",
  "sources": [
   {
    "id": "mahesh-surada",
@@ -94,9 +94,20 @@
    "repo": "morluto/rea",
    "url": "https://github.com/morluto/rea",
    "license": "MIT",
-   "commit": "048d70755ea9",
+   "commit": "3fca2e0ca6e5",
    "skills": 5,
    "copied": 5,
+   "linked": 0
+  },
+  {
+   "id": "ponytail",
+   "name": "Ponytail by Dietrich Gebert",
+   "repo": "DietrichGebert/ponytail",
+   "url": "https://github.com/DietrichGebert/ponytail",
+   "license": "MIT",
+   "commit": "09c434ab73ca",
+   "skills": 6,
+   "copied": 6,
    "linked": 0
   }
  ],
@@ -625,6 +636,34 @@
    "local": "skills/wshobson/parallel-debugging"
   },
   {
+   "id": "ponytail/ponytail",
+   "name": "ponytail",
+   "description": "Lazy senior dev mode: the smallest change that fully solves the task, and a reply a busy human understands in one read. Use on any coding task (writing, fixing, refactoring, reviewing, choosing dependencies) and when the user says \"ponytail\", \"be lazy\", \"simplest solution\", \"yagni\", or complains about over-engineering or bloat. Levels: lite, full (default), ultra.",
+   "source": "ponytail",
+   "repo": "DietrichGebert/ponytail",
+   "path": "skills/ponytail",
+   "url": "https://github.com/DietrichGebert/ponytail/tree/09c434ab73ca/skills/ponytail",
+   "license": "MIT",
+   "vendored": true,
+   "category": "Coding workflow",
+   "sizeKB": 3,
+   "local": "skills/ponytail/ponytail"
+  },
+  {
+   "id": "ponytail/ponytail-review",
+   "name": "ponytail-review",
+   "description": "Quality review of a change: is the logic right, is it safe, does it hold under real load, is risky code tested, is it fast enough, and is every line needed. Reads the connected code, not only the diff. Each finding is explained in plain English. Use for \"review this\", \"code review\", \"review the last commit\", \"review my PR\", \"is this over-engineered\", /ponytail-review.",
+   "source": "ponytail",
+   "repo": "DietrichGebert/ponytail",
+   "path": "skills/ponytail-review",
+   "url": "https://github.com/DietrichGebert/ponytail/tree/09c434ab73ca/skills/ponytail-review",
+   "license": "MIT",
+   "vendored": true,
+   "category": "Coding workflow",
+   "sizeKB": 5,
+   "local": "skills/ponytail/ponytail-review"
+  },
+  {
    "id": "wshobson/preference-optimization",
    "name": "preference-optimization",
    "description": "Align a fine-tuned model with preference data using DPO, ORPO, KTO, or SimPO. Use when preference pairs or thumbs-up/down feedback exist, when choosing between preference-optimization methods, or when a DPO run needs hyperparameters or debugging.",
@@ -701,7 +740,7 @@
    "source": "rea",
    "repo": "morluto/rea",
    "path": ".agents/skills/rea-changelog-update",
-   "url": "https://github.com/morluto/rea/tree/048d70755ea9/.agents/skills/rea-changelog-update",
+   "url": "https://github.com/morluto/rea/tree/3fca2e0ca6e5/.agents/skills/rea-changelog-update",
    "license": "MIT",
    "vendored": true,
    "category": "Coding workflow",
@@ -1499,7 +1538,7 @@
    "source": "rea",
    "repo": "morluto/rea",
    "path": ".agents/skills/rea-analysis-optimization",
-   "url": "https://github.com/morluto/rea/tree/048d70755ea9/.agents/skills/rea-analysis-optimization",
+   "url": "https://github.com/morluto/rea/tree/3fca2e0ca6e5/.agents/skills/rea-analysis-optimization",
    "license": "MIT",
    "vendored": true,
    "category": "Design & UI",
@@ -1513,7 +1552,7 @@
    "source": "rea",
    "repo": "morluto/rea",
    "path": ".agents/skills/rea-tool-design",
-   "url": "https://github.com/morluto/rea/tree/048d70755ea9/.agents/skills/rea-tool-design",
+   "url": "https://github.com/morluto/rea/tree/3fca2e0ca6e5/.agents/skills/rea-tool-design",
    "license": "MIT",
    "vendored": true,
    "category": "Design & UI",
@@ -2688,11 +2727,11 @@
    "source": "rea",
    "repo": "morluto/rea",
    "path": ".agents/skills/reverse-engineer-anything",
-   "url": "https://github.com/morluto/rea/tree/048d70755ea9/.agents/skills/reverse-engineer-anything",
+   "url": "https://github.com/morluto/rea/tree/3fca2e0ca6e5/.agents/skills/reverse-engineer-anything",
    "license": "MIT",
    "vendored": true,
    "category": "Languages & Frameworks",
-   "sizeKB": 73,
+   "sizeKB": 77,
    "local": "skills/rea/reverse-engineer-anything"
   },
   {
@@ -3125,6 +3164,48 @@
    "local": "skills/wshobson/nx-workspace-patterns"
   },
   {
+   "id": "ponytail/ponytail-debt",
+   "name": "ponytail-debt",
+   "description": "List every `shortcut:` comment (and older `ponytail:` ones) as a debt ledger. One-shot report, changes nothing. Use for \"ponytail debt\", \"what did ponytail defer\", \"list the shortcuts\", /ponytail-debt.",
+   "source": "ponytail",
+   "repo": "DietrichGebert/ponytail",
+   "path": "skills/ponytail-debt",
+   "url": "https://github.com/DietrichGebert/ponytail/tree/09c434ab73ca/skills/ponytail-debt",
+   "license": "MIT",
+   "vendored": true,
+   "category": "Other",
+   "sizeKB": 2,
+   "local": "skills/ponytail/ponytail-debt"
+  },
+  {
+   "id": "ponytail/ponytail-gain",
+   "name": "ponytail-gain",
+   "description": "Show ponytail's measured savings (code, cost, speed) from the benchmark. One-shot display. Use for /ponytail-gain, \"what does ponytail save\", \"ponytail impact\".",
+   "source": "ponytail",
+   "repo": "DietrichGebert/ponytail",
+   "path": "skills/ponytail-gain",
+   "url": "https://github.com/DietrichGebert/ponytail/tree/09c434ab73ca/skills/ponytail-gain",
+   "license": "MIT",
+   "vendored": true,
+   "category": "Other",
+   "sizeKB": 2,
+   "local": "skills/ponytail/ponytail-gain"
+  },
+  {
+   "id": "ponytail/ponytail-help",
+   "name": "ponytail-help",
+   "description": "Quick reference for ponytail levels, skills and commands. One-shot display. Use for /ponytail-help, \"ponytail help\", \"how do I use ponytail\".",
+   "source": "ponytail",
+   "repo": "DietrichGebert/ponytail",
+   "path": "skills/ponytail-help",
+   "url": "https://github.com/DietrichGebert/ponytail/tree/09c434ab73ca/skills/ponytail-help",
+   "license": "MIT",
+   "vendored": true,
+   "category": "Other",
+   "sizeKB": 3,
+   "local": "skills/ponytail/ponytail-help"
+  },
+  {
    "id": "wshobson/projection-patterns",
    "name": "projection-patterns",
    "description": "Build read models and projections from event streams. Use when implementing CQRS read sides, building materialized views, or optimizing query performance in event-sourced systems.",
@@ -3385,6 +3466,20 @@
    "category": "Security",
    "sizeKB": 12,
    "local": "skills/wshobson/pci-compliance"
+  },
+  {
+   "id": "ponytail/ponytail-audit",
+   "name": "ponytail-audit",
+   "description": "Quality audit of a whole repo: bugs, security holes, what breaks under real load, risky code without tests, slow paths, and what to delete, merge or split. Ranked, each finding explained in plain English. One-shot report, changes nothing. Use for \"audit this codebase\", \"review the whole repo\", \"find bloat\", \"what can I delete\", /ponytail-audit.",
+   "source": "ponytail",
+   "repo": "DietrichGebert/ponytail",
+   "path": "skills/ponytail-audit",
+   "url": "https://github.com/DietrichGebert/ponytail/tree/09c434ab73ca/skills/ponytail-audit",
+   "license": "MIT",
+   "vendored": true,
+   "category": "Security",
+   "sizeKB": 5,
+   "local": "skills/ponytail/ponytail-audit"
   },
   {
    "id": "wshobson/protect-mcp-setup",
@@ -3701,7 +3796,7 @@
    "source": "rea",
    "repo": "morluto/rea",
    "path": ".agents/skills/rea-ci-tests-audit",
-   "url": "https://github.com/morluto/rea/tree/048d70755ea9/.agents/skills/rea-ci-tests-audit",
+   "url": "https://github.com/morluto/rea/tree/3fca2e0ca6e5/.agents/skills/rea-ci-tests-audit",
    "license": "MIT",
    "vendored": true,
    "category": "Testing & QA",
@@ -3807,6 +3902,6 @@
    "local": "skills/wshobson/workflow-patterns"
   }
  ],
- "total": 267,
- "copied": 234
+ "total": 273,
+ "copied": 240
 }

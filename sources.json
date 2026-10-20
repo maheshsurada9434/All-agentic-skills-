@@ -58,6 +58,19 @@
         "experiments/",
         "docs/"
       ]
+    },
+    {
+      "id": "ponytail",
+      "name": "Ponytail by Dietrich Gebert",
+      "repo": "DietrichGebert/ponytail",
+      "exclude": [
+        "assets/",
+        "benchmarks/",
+        "docs/",
+        "examples/",
+        "tests/",
+        "i18n/"
+      ]
     }
   ]
 }

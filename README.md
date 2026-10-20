@@ -37,7 +37,7 @@ By default skills go to `~/.claude/skills`. Use `--project` for `./.claude/skill
 ## 📚 Catalog
 
 <!-- CATALOG:START -->
-**267 skills** from 9 collections, 234 of them copied here and ready to install. Last synced 2026-10-19.
+**273 skills** from 10 collections, 240 of them copied here and ready to install. Last synced 2026-10-20.
 
 | Collection | Skills | In this repo | Licence |
 |---|---:|---:|---|
@@ -50,6 +50,7 @@ By default skills go to `~/.claude/skills`. Use `--project` for `./.claude/skill
 | [Karpathy coding guidelines](https://github.com/forrestchang/andrej-karpathy-skills) | 1 | 0 | per skill |
 | [Composio awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | 27 | 4 | per skill |
 | [REA: Reverse Engineer Anything](https://github.com/morluto/rea) | 5 | 5 | MIT |
+| [Ponytail by Dietrich Gebert](https://github.com/DietrichGebert/ponytail) | 6 | 6 | MIT |
 
 <details><summary><b>Business & Writing</b> (10)</summary>
 
@@ -68,7 +69,7 @@ By default skills go to `~/.claude/skills`. Use `--project` for `./.claude/skill
 
 </details>
 
-<details><summary><b>Coding workflow</b> (44)</summary>
+<details><summary><b>Coding workflow</b> (46)</summary>
 
 | Skill | What it does | Source |
 |---|---|---|
@@ -96,6 +97,8 @@ By default skills go to `~/.claude/skills`. Use `--project` for `./.claude/skill
 | [`modern-javascript-patterns`](skills/wshobson/modern-javascript-patterns) | Master ES6+ features including async/await, destructuring, spread operators, arrow functions, promises, modules, iterators, generators, and … | wshobson |
 | [`multi-reviewer-patterns`](skills/wshobson/multi-reviewer-patterns) | Coordinate parallel code reviews across multiple quality dimensions with finding deduplication, severity calibration, and consolidated repor… | wshobson |
 | [`parallel-debugging`](skills/wshobson/parallel-debugging) | Debug complex issues using competing hypotheses with parallel investigation, evidence collection, and root cause arbitration. Use this skill… | wshobson |
+| [`ponytail`](skills/ponytail/ponytail) | Lazy senior dev mode: the smallest change that fully solves the task, and a reply a busy human understands in one read. Use on any coding ta… | ponytail |
+| [`ponytail-review`](skills/ponytail/ponytail-review) | Quality review of a change: is the logic right, is it safe, does it hold under real load, is risky code tested, is it fast enough, and is ev… | ponytail |
 | [`preference-optimization`](skills/wshobson/preference-optimization) | Align a fine-tuned model with preference data using DPO, ORPO, KTO, or SimPO. Use when preference pairs or thumbs-up/down feedback exist, wh… | wshobson |
 | [`protocol-reverse-engineering`](skills/wshobson/protocol-reverse-engineering) | Master network protocol reverse engineering including packet analysis, protocol dissection, and custom protocol documentation. Use when anal… | wshobson |
 | [`python-anti-patterns`](skills/wshobson/python-anti-patterns) | Use this skill when reviewing Python code for common anti-patterns to avoid. Use as a checklist when reviewing code, before finalizing imple… | wshobson |
@@ -312,7 +315,7 @@ By default skills go to `~/.claude/skills`. Use `--project` for `./.claude/skill
 
 </details>
 
-<details><summary><b>Other</b> (32)</summary>
+<details><summary><b>Other</b> (35)</summary>
 
 | Skill | What it does | Source |
 |---|---|---|
@@ -336,6 +339,9 @@ By default skills go to `~/.claude/skills`. Use `--project` for `./.claude/skill
 | [`monorepo-management`](skills/wshobson/monorepo-management) | Master monorepo management with Turborepo, Nx, and pnpm workspaces to build efficient, scalable multi-package repositories with optimized bu… | wshobson |
 | [`mtls-configuration`](skills/wshobson/mtls-configuration) | Configure mutual TLS (mTLS) for zero-trust service-to-service communication. Use when implementing zero-trust networking, certificate manage… | wshobson |
 | [`nx-workspace-patterns`](skills/wshobson/nx-workspace-patterns) | Configure and optimize Nx monorepo workspaces. Use when setting up Nx, configuring project boundaries, optimizing build caching, or implemen… | wshobson |
+| [`ponytail-debt`](skills/ponytail/ponytail-debt) | List every `shortcut:` comment (and older `ponytail:` ones) as a debt ledger. One-shot report, changes nothing. Use for "ponytail debt", "wh… | ponytail |
+| [`ponytail-gain`](skills/ponytail/ponytail-gain) | Show ponytail's measured savings (code, cost, speed) from the benchmark. One-shot display. Use for /ponytail-gain, "what does ponytail save"… | ponytail |
+| [`ponytail-help`](skills/ponytail/ponytail-help) | Quick reference for ponytail levels, skills and commands. One-shot display. Use for /ponytail-help, "ponytail help", "how do I use ponytail"… | ponytail |
 | [`projection-patterns`](skills/wshobson/projection-patterns) | Build read models and projections from event streams. Use when implementing CQRS read sides, building materialized views, or optimizing quer… | wshobson |
 | [`raffle-winner-picker`](https://github.com/ComposioHQ/awesome-claude-skills/tree/be2a406907db/raffle-winner-picker) | Picks random winners from lists, spreadsheets, or Google Sheets for giveaways, raffles, and contests. Ensures fair, unbiased selection with … | composio ↗ |
 | [`scan`](skills/wshobson/scan) | Scans the codebase to generate project-doc.md and AGENTS.md. Use when bootstrapping a new agent-driven repo, refreshing project documentatio… | wshobson |
@@ -351,7 +357,7 @@ By default skills go to `~/.claude/skills`. Use `--project` for `./.claude/skill
 
 </details>
 
-<details><summary><b>Security</b> (15)</summary>
+<details><summary><b>Security</b> (16)</summary>
 
 | Skill | What it does | Source |
 |---|---|---|
@@ -362,6 +368,7 @@ By default skills go to `~/.claude/skills`. Use `--project` for `./.claude/skill
 | [`k8s-security-policies`](skills/wshobson/k8s-security-policies) | Implement Kubernetes security policies including NetworkPolicy, PodSecurityPolicy, and RBAC for production-grade security. Use when securing… | wshobson |
 | [`linkerd-patterns`](skills/wshobson/linkerd-patterns) | Implement Linkerd service mesh patterns for lightweight, security-focused service mesh deployments. Use when setting up Linkerd, configuring… | wshobson |
 | [`pci-compliance`](skills/wshobson/pci-compliance) | Implement PCI DSS compliance requirements for secure handling of payment card data and payment systems. Use when securing payment processing… | wshobson |
+| [`ponytail-audit`](skills/ponytail/ponytail-audit) | Quality audit of a whole repo: bugs, security holes, what breaks under real load, risky code without tests, slow paths, and what to delete, … | ponytail |
 | [`protect-mcp-setup`](skills/wshobson/protect-mcp-setup) | Configure Cedar policy enforcement and Ed25519 signed receipts for Claude Code tool calls. Use when setting up projects that need cryptograp… | wshobson |
 | [`python-configuration`](skills/wshobson/python-configuration) | Python configuration management via environment variables and typed settings. Use when externalizing config, setting up pydantic-settings, m… | wshobson |
 | [`sast-configuration`](skills/wshobson/sast-configuration) | Configure Static Application Security Testing (SAST) tools for automated vulnerability detection in application code. Use when setting up se… | wshobson |
