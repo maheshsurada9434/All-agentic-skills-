@@ -37,7 +37,7 @@ By default skills go to `~/.claude/skills`. Use `--project` for `./.claude/skill
 ## 📚 Catalog
 
 <!-- CATALOG:START -->
-**273 skills** from 10 collections, 240 of them copied here and ready to install. Last synced 2026-10-20.
+**273 skills** from 10 collections, 240 of them copied here and ready to install. Last synced 2026-10-26.
 
 | Collection | Skills | In this repo | Licence |
 |---|---:|---:|---|
