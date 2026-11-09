@@ -1,4 +1,4 @@
 # Source
 
-This skill is a copy of [wshobson/agents/plugins/systems-programming/skills/go-concurrency-patterns](https://github.com/wshobson/agents/tree/7e2fb559cf4b/plugins/systems-programming/skills/go-concurrency-patterns) (MIT).
+This skill is a copy of [wshobson/agents/plugins/systems-programming/skills/go-concurrency-patterns](https://github.com/wshobson/agents/tree/9c61ab243def/plugins/systems-programming/skills/go-concurrency-patterns) (MIT).
 Copied by the All Agentic Skills weekly sync. All credit goes to the original authors.

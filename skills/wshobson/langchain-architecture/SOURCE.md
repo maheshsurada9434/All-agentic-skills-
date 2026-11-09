@@ -1,4 +1,4 @@
 # Source
 
-This skill is a copy of [wshobson/agents/plugins/llm-application-dev/skills/langchain-architecture](https://github.com/wshobson/agents/tree/7e2fb559cf4b/plugins/llm-application-dev/skills/langchain-architecture) (MIT).
+This skill is a copy of [wshobson/agents/plugins/llm-application-dev/skills/langchain-architecture](https://github.com/wshobson/agents/tree/9c61ab243def/plugins/llm-application-dev/skills/langchain-architecture) (MIT).
 Copied by the All Agentic Skills weekly sync. All credit goes to the original authors.

@@ -1,4 +1,4 @@
 # Source
 
-This skill is a copy of [wshobson/agents/plugins/reverse-engineering/skills/binary-analysis-patterns](https://github.com/wshobson/agents/tree/7e2fb559cf4b/plugins/reverse-engineering/skills/binary-analysis-patterns) (MIT).
+This skill is a copy of [wshobson/agents/plugins/reverse-engineering/skills/binary-analysis-patterns](https://github.com/wshobson/agents/tree/9c61ab243def/plugins/reverse-engineering/skills/binary-analysis-patterns) (MIT).
 Copied by the All Agentic Skills weekly sync. All credit goes to the original authors.

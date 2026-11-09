@@ -37,12 +37,12 @@ By default skills go to `~/.claude/skills`. Use `--project` for `./.claude/skill
 ## 📚 Catalog
 
 <!-- CATALOG:START -->
-**273 skills** from 10 collections, 240 of them copied here and ready to install. Last synced 2026-11-02.
+**273 skills** from 10 collections, 244 of them copied here and ready to install. Last synced 2026-11-09.
 
 | Collection | Skills | In this repo | Licence |
 |---|---:|---:|---|
 | [Mahesh Surada (original)](https://github.com/maheshsurada9434/All-agentic-skills-) | 4 | 4 | MIT |
-| [Anthropic (official)](https://github.com/anthropics/skills) | 19 | 14 | per skill |
+| [Anthropic (official)](https://github.com/anthropics/skills) | 19 | 18 | per skill |
 | [Superpowers by Jesse Vincent](https://github.com/obra/superpowers) | 15 | 15 | MIT |
 | [UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | 7 | 7 | MIT |
 | [wshobson/agents plugin skills](https://github.com/wshobson/agents) | 185 | 185 | MIT |

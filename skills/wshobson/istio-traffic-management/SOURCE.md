@@ -1,4 +1,4 @@
 # Source
 
-This skill is a copy of [wshobson/agents/plugins/cloud-infrastructure/skills/istio-traffic-management](https://github.com/wshobson/agents/tree/7e2fb559cf4b/plugins/cloud-infrastructure/skills/istio-traffic-management) (MIT).
+This skill is a copy of [wshobson/agents/plugins/cloud-infrastructure/skills/istio-traffic-management](https://github.com/wshobson/agents/tree/9c61ab243def/plugins/cloud-infrastructure/skills/istio-traffic-management) (MIT).
 Copied by the All Agentic Skills weekly sync. All credit goes to the original authors.
